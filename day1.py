@@ -122,13 +122,75 @@
 # length=len(input("Enter your name: "))
 # print("Number of letters in your name: "+str(length))
 
-print("String"+str(12))
-print(234+24)
-print(7-3)
-print(5/3)
-print(5*3)
-print(5**3)
-print(6//5)
-print(type(6/3))
-print(type(6/5))
-print(type(6//5))
+
+# #Mathematical operators
+# print("String"+str(12))
+# print(234+24)
+# print(7-3)
+# print(5/3)
+# print(5*3)
+# print(5**3)
+# print(6//3)
+# print(type(6/3))
+# print(type(6/5))
+# print(type(6//5))
+# print(5%3)
+
+# #Order of priority 
+# # PEMDASLR - Parenthesis > Exponent > Multiplication > Division > Addition > Subtraction > Logarithmic > Roots
+# print(3*3+3/3-3)
+# #chnage the above line of code to get output 3
+# print(3*3+3/3-7)
+# #OR
+# print(3*(3+3)/3-3)
+
+
+# # BMI Calculator
+# # height=float(input())
+# # weight=float(input())
+# height=2.1
+# weight=84
+
+# bmi= weight/height**2
+# print(bmi)
+# #Using int(any decimal number) will remove all number after decimal and print only number before decimal
+# print(int(bmi)) #Here all number after decimal are removed.
+
+# #This is called flooring- mean removing all numbers after decimal and keep only number before decimal
+# #We can also use math.floor() fucntion but first we need to inmport math
+# #OR we can use floor division operator: //
+# print(int(2.4))
+# print(34.66666675467)
+# print(int(34.66666675467))
+# print(-4.4567)
+# print(int(-4.999))
+# print(-10//3)
+
+
+# # Rounding off
+# print(round(bmi))
+# print(round(bmi, 2))
+# print(round(8.355,2))
+
+# #Assignemnt ooperator: =
+# score=0
+# score +=1
+# print(score)
+
+# #f strings
+# print("Yours score is "+ str(score)) #here we needed to type cast thr score
+# #insetad of type casting we can use f string
+# score=0
+# height=1.2
+# is_winning=True
+# print(f"Your score is = {score} and your height is {height}. You are winning is {is_winning}.")
+
+# #TIP CALCULATOR
+# print("Welcome to the tip calculator!")
+# total_bill = float(input("What was the total bill? $"))
+# tip_percentage = float(input("How much tip would you like to give? 10, 12, or 15? "))
+# total_people = int(input("How many people to split the bill? "))
+# new_bill= (total_bill + (tip_percentage/100)*total_bill)
+# print(new_bill)
+# per_person_amount = round(new_bill/total_people, 2)
+# print(f"Each person should pay: {per_person_amount}")
