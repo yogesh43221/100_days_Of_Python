@@ -191,5 +191,44 @@
 # or operator - A or B
 # not operator - not A
 
-a=10
-print(not a > 10)
+# a=10
+# print(not a > 10) # it means not of false that is true
+
+# Day 3: PROJECT : Treasure Island
+
+print("Welcome to Treasure Island. Your mission is to find the treasure.")
+death = 0
+a = input("Where do you want to go? left or right: ").lower()
+if a == "right":
+    death += 1
+    print("Game over! You fell in hole.")
+elif a == "left":
+    print("There is river infront of you.")
+    b = input("What you want to do next? swim or wait").lower()
+    if b == "swim":
+        print("You entered into the ice cold river.")
+        print('''You covered 50 km, but now you got hypothermia and you are converting into ice.
+              But but.. someone saw you and got you out of ice.
+              After getting back to normal temp. you woke up in an Cruise.
+              You won and living luxurious life now! Cheers!''')
+        death -= 1
+
+    elif b == "wait":
+        print("Boat came over and you seat in it. Boat took you to a island.")
+        c = input("What door you choose? Red or Blue: ").lower()
+        if c == "red":
+            death += 1
+            print("Game over! You were eaten by monster.")
+        elif c == "blue":
+            print("You are heading into a cave.")
+        elif c == "yellow":
+            print("You got captured by tribal's group.")
+        else:
+            print("Enter a valid input!")
+    else:
+        print("Enter valid input!")
+
+else:
+    print("Please enter valid input!")
+
+print(f"Your total deaths are {death}")
