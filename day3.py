@@ -206,8 +206,7 @@ elif a == "left":
     print("There is river infront of you.")
     b = input("What you want to do next? swim or wait").lower()
     if b == "swim":
-        print("You entered into the ice cold river.")
-        print('''You covered 50 km, but now you got hypothermia and you are converting into ice.
+        print('''You entered into the ice cold river. You covered 50 km, but now you got hypothermia and you are converting into ice.
               But but.. someone saw you and got you out of ice.
               After getting back to normal temp. you woke up in an Cruise.
               You won and living luxurious life now! Cheers!''')
@@ -222,7 +221,7 @@ elif a == "left":
         elif c == "blue":
             print("You are heading into a cave.")
         elif c == "yellow":
-            print("You got captured by tribal's group.")
+            print("Your found treasure. You won!")
         else:
             print("Enter a valid input!")
     else:
